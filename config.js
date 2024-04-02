@@ -5,7 +5,7 @@ if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 process.env.NODE_OPTIONS = '--max_old_space_size=2560'//2.5
 const DB_URL =  process.env.DATABASE_URL || '';
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID |GuruBot~65MEMM9w| '', //your ssid to run bot
+    SESSION_ID: process.env.SESSION_ID |inrl~939201ilv6bc04414523d3f2a5c54f28e4fd| '', //your ssid to run bot
     HEROKU: {
         API_KEY: process.env.HEROKU_API_KEY,
         APP_NAME: process.env.HEROKU_APP_NAME
@@ -28,7 +28,7 @@ module.exports = {
     ERROR_MSG : toBool(process.env.ERROR_MSG || "true"),
     AJOIN: toBool(process.env.AJOIN || 'false'),
     READ : process.env.READ ||  "false",//true, command
-    CHATBOT : process.env.CHATBOT || "false",//true, pm, group
+    CHATBOT : process.env.CHATBOT || "true",//true, pm, group
     REACT : process.env.REACT || "false",//true, command, emoji
     WARNCOUND : process.env.WARNCOUND || 5,
     BOT_INFO : process.env.BOT_INFO || "INRL-BOT-MD;INRL;https://i.imgur.com/DyLAuEh.jpg",
