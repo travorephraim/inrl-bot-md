@@ -5,7 +5,7 @@ if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 process.env.NODE_OPTIONS = '--max_old_space_size=2560'//2.5
 const DB_URL =  process.env.DATABASE_URL || '';
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || '', //your ssid to run bot
+    SESSION_ID: process.env.SESSION_ID |GuruBot~65MEMM9w| '', //your ssid to run bot
     HEROKU: {
         API_KEY: process.env.HEROKU_API_KEY,
         APP_NAME: process.env.HEROKU_APP_NAME
@@ -16,12 +16,12 @@ module.exports = {
     BGM_URL : process.env.BGM_URL || "null",
     REJECT_CALL : toBool(process.env.REJECT_CALL || 'false'),
     BADWORD_BLOCK : toBool(process.env.BADWORD_BLOCK || 'false'),
-    ALLWAYS_ONLINE: toBool(process.env.ALLWAYS_ONLINE || "false"),
+    ALLWAYS_ONLINE: toBool(process.env.ALLWAYS_ONLINE || "true"),
     PM_BLOCK : toBool(process.env.PM_BLOCK || "false"),
     BGMBOT : toBool(process.env.BGMBOT || "false"),
     CALL_BLOCK : toBool(process.env.CALL_BLOCK || "false"),
-    STATUS_VIEW : process.env.STATUS_VIEW || "false",
-    SAVE_STATUS : toBool(process.env.SAVE_STATUS || "false"),
+    STATUS_VIEW : process.env.STATUS_VIEW || "true",
+    SAVE_STATUS : toBool(process.env.SAVE_STATUS || "true"),
     ADMIN_SUDO_ACCESS: toBool(process.env.ADMIN_SUDO_ACCESS || "false"),
     DISABLE_PM: toBool(process.env.DISABLE_PM || "false"),
     DISABLE_GRP : toBool(process.env.DISABLE_GRP || "false"),
@@ -32,7 +32,7 @@ module.exports = {
     REACT : process.env.REACT || "false",//true, command, emoji
     WARNCOUND : process.env.WARNCOUND || 5,
     BOT_INFO : process.env.BOT_INFO || "INRL-BOT-MD;INRL;https://i.imgur.com/DyLAuEh.jpg",
-    WORKTYPE : process.env.WORKTYPE || "private",
+    WORKTYPE : process.env.WORKTYPE || "public",
     PREFIX : process.env.PREFIX || "[.,!]",//both  .  and [.] equal, for multi prefix we use [] this
     LANG : process.env.LANG || "en",
     PERSONAL_MESSAGE: process.env.PERSONAL_MESSAGE || "null",
